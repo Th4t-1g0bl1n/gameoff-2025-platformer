@@ -13,8 +13,6 @@ class_name GroundObject3D
 ## If true, a collision shape will not be generated
 @export var no_collide : bool = false
 
-@export_tool_button("Regen", "Callable") var regen_button = build_mesh(false)
-
 @export_group("Visuals")
 @export var mesh_type : int
 @export var mesh_type_override : MeshLibrary
@@ -156,7 +154,6 @@ func build_mesh(build_collision : bool):
 		)
 		print("Mesh #" + str(p.mesh_id) + " created.")
 	
-	pass
 
 func _make_part(mesh : Mesh, scale_override := Vector3.ONE, pos_override := Vector3.ZERO, rot_override := Vector3.ZERO) -> MeshInstance3D:
 	var m := MeshInstance3D.new()
