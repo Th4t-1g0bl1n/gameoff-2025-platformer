@@ -1,14 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://cfe7bhbdr75dx"]
-
-[ext_resource type="Shader" uid="uid://djpyley5gvm5i" path="res://base.gdshader" id="1_12po2"]
-[ext_resource type="Texture2D" uid="uid://d3d82whd5qe2f" path="res://textures/terrain/Overworld/grasstop.png" id="2_p8j4q"]
-[ext_resource type="Texture2D" uid="uid://hq3ibxg7otjv" path="res://textures/terrain/Overworld/grass2.png" id="3_12po2"]
-[ext_resource type="Texture2D" uid="uid://2j4ql5t7cqd" path="res://textures/terrain/Overworld/dirt.png" id="3_45e0x"]
-[ext_resource type="Texture2D" uid="uid://nqx7ijoj04ak" path="res://textures/terrain/Overworld/grass.png" id="4_p8j4q"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_12po2"]
-albedo_texture = ExtResource("2_p8j4q")
-uv1_triplanar = true
+[gd_scene load_steps=11 format=4 uid="uid://cfe7bhbdr75dx"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6k0j3"]
 _surfaces = [{
@@ -32,7 +22,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_12po2"),
 "name": "Top",
 "primitive": 3,
 "uv_scale": Vector4(2.00392, 2, 0, 0),
@@ -41,16 +30,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6k0j3")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_12po2"]
-render_priority = 0
-shader = ExtResource("1_12po2")
-shader_parameter/albedo_tex = ExtResource("2_p8j4q")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rh2os"]
-render_priority = 0
-shader = ExtResource("1_12po2")
-shader_parameter/albedo_tex = ExtResource("3_12po2")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_y2lse"]
 _surfaces = [{
@@ -84,7 +63,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 18,
 "index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABQAGAAQABQAHAAYA"),
-"material": SubResource("ShaderMaterial_12po2"),
 "name": "Top",
 "primitive": 3,
 "uv_scale": Vector4(2.00392, 2, 0, 0),
@@ -96,7 +74,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 18,
 "index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABgAEAAUABgAHAAQA"),
-"material": SubResource("ShaderMaterial_rh2os"),
 "name": "SideUpper",
 "primitive": 3,
 "uv_scale": Vector4(2, 2, 0, 0),
@@ -105,14 +82,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_y2lse")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_p8j4q"]
-render_priority = 0
-shader = ExtResource("1_12po2")
-shader_parameter/albedo_tex = ExtResource("2_p8j4q")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d57xq"]
-albedo_texture = ExtResource("4_p8j4q")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nphvl"]
 _surfaces = [{
@@ -149,7 +118,6 @@ _surfaces = [{
 "index_count": 54,
 "index_data": PackedByteArray("AAAMAAIADAAGAAIAAAADAAwADAANAAYADQAIAAYADQAHAAgADQAJAAcADQAOAAkADAAOAA0ADgAKAAkADgALAAoADAAPAA4ADwALAA4AAwAPAAwADwABAAsAAwAEAA8ABAABAA8ABAAFAAEA"),
 "lods": [0.0658804, PackedByteArray("AAABAAIAAAADAAEAAwAEAAEABAAFAAEAAQAGAAIAAQAHAAYABwAIAAYABwABAAkAAQAKAAkAAQALAAoA")],
-"material": SubResource("ShaderMaterial_p8j4q"),
 "name": "Top",
 "primitive": 3,
 "uv_scale": Vector4(4.00392, 2, 0, 0),
@@ -162,7 +130,6 @@ _surfaces = [{
 "index_count": 108,
 "index_data": PackedByteArray("AAABAAIAAAAUAAEAFAAAAAgAFAADAAEAFAAIABUAFQAIAAcAFQAHABYAFwAUABUAFAAXAAMAGAAVABYAFwAVABgAGAAWABkACQAYABkACQAGABgABgAXABgABgAEABcABAADABcABAAFAAMAGgAbABwAHAAbAAsAHAALAA4AGgAdABsACgAdABoACgANAB0ADwAKABoADwAaAB4AHgAaABwAEAAPAB4AEAAeABEAEgARAB4AHgAcAB8AEgAeAB8AHwAcAA4AEwASAB8AHwAOAAwAEwAfAAwA"),
 "lods": [0.0769394, PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAEAAAABgAAAAcAAAAIAAcACQAGAAcACgALAAwACgANAAsADAALAA4ADwAKAAwAEAAPAAwAEAAMABEAEgARAAwAEwASAAwA")],
-"material": SubResource("StandardMaterial3D_d57xq"),
 "name": "SideUpper",
 "primitive": 3,
 "uv_scale": Vector4(22, 2, 0, 0),
@@ -171,11 +138,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_nphvl")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_h3hkx"]
-render_priority = 0
-shader = ExtResource("1_12po2")
-shader_parameter/albedo_tex = ExtResource("3_45e0x")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_eduq6"]
 _surfaces = [{
@@ -199,7 +161,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAwAAAAIAAwACAAQAAAAFAAEABQAGAAEABQAHAAYACAAJAAoACAALAAkACwAMAAkACwANAAwADQAOAAwADQAPAA4A"),
-"material": SubResource("ShaderMaterial_h3hkx"),
 "name": "Sand",
 "primitive": 3,
 "uv_scale": Vector4(22, 2, 0, 0),
@@ -208,11 +169,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_eduq6")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_jhrt8"]
-render_priority = 0
-shader = ExtResource("1_12po2")
-shader_parameter/albedo_tex = ExtResource("3_45e0x")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_14l1f"]
 _surfaces = [{
@@ -236,7 +192,6 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("ShaderMaterial_jhrt8"),
 "name": "Sand",
 "primitive": 3,
 "uv_scale": Vector4(2, 2, 0, 0),

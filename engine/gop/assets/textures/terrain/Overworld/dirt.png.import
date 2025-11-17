@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn8gwh3yr5a6s"
-path="res://.godot/imported/grassBlade.png-c6034519f37ceb29a6e20b15e31c9eaa.ctex"
+uid="uid://2j4ql5t7cqd"
+path="res://.godot/imported/dirt.png-78ad83e4c8681622c242fb6b81f688ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/terrain/Overworld/grassBlade.png"
-dest_files=["res://.godot/imported/grassBlade.png-c6034519f37ceb29a6e20b15e31c9eaa.ctex"]
+source_file="res://engine/gop/assets/textures/terrain/Overworld/dirt.png"
+dest_files=["res://.godot/imported/dirt.png-78ad83e4c8681622c242fb6b81f688ac.ctex"]
 
 [params]
 

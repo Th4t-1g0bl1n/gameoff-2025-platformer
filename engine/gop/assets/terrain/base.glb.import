@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cilap68pdkxua"
-path="res://.godot/imported/untitled.glb-045eee1eec3adf658e089d54a06ea42e.scn"
+path="res://.godot/imported/base.glb-970f121df78a1dc2b918ee0884a791a9.scn"
 
 [deps]
 
-source_file="res://terrain/untitled.glb"
-dest_files=["res://.godot/imported/untitled.glb-045eee1eec3adf658e089d54a06ea42e.scn"]
+source_file="res://engine/gop/assets/terrain/base.glb"
+dest_files=["res://.godot/imported/base.glb-970f121df78a1dc2b918ee0884a791a9.scn"]
 
 [params]
 

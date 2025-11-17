@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i6v2ywgotc74"
-path="res://.godot/imported/grass Blades.png-4299e2ab248f437cab2b94cfe622a9f3.ctex"
+uid="uid://hq3ibxg7otjv"
+path="res://.godot/imported/grass2.png-9b0e0a6ab84c5e2f7acc31addb6e7eb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/terrain/Overworld/grass Blades.png"
-dest_files=["res://.godot/imported/grass Blades.png-4299e2ab248f437cab2b94cfe622a9f3.ctex"]
+source_file="res://engine/gop/assets/textures/terrain/Overworld/grass2.png"
+dest_files=["res://.godot/imported/grass2.png-9b0e0a6ab84c5e2f7acc31addb6e7eb2.ctex"]
 
 [params]
 

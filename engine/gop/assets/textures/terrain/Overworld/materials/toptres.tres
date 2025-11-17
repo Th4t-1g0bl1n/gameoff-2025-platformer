@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c6rqcko1d7ull"]
 
-[ext_resource type="Texture2D" uid="uid://d3d82whd5qe2f" path="res://textures/terrain/Overworld/grasstop.png" id="1_30k0l"]
+[ext_resource type="Texture2D" uid="uid://d3d82whd5qe2f" path="res://engine/gop/assets/textures/terrain/Overworld/grasstop.png" id="1_30k0l"]
 [ext_resource type="Shader" uid="uid://djpyley5gvm5i" path="res://base.gdshader" id="1_ewjo1"]
 
 [resource]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3d82whd5qe2f"
-path="res://.godot/imported/grasstop.png-5f9b6afba0887e725369912a8cc27264.ctex"
+path="res://.godot/imported/grasstop.png-4b89010d201da32ccb13ee6515710fbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/terrain/Overworld/grasstop.png"
-dest_files=["res://.godot/imported/grasstop.png-5f9b6afba0887e725369912a8cc27264.ctex"]
+source_file="res://engine/gop/assets/textures/terrain/Overworld/grasstop.png"
+dest_files=["res://.godot/imported/grasstop.png-4b89010d201da32ccb13ee6515710fbd.ctex"]
 
 [params]
 
