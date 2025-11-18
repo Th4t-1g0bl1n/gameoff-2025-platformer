@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdqq0kpva4syp"]
+
+[ext_resource type="Script" uid="uid://d108ocewmtpsy" path="res://engine/gop/imp/entity/player/player.gd" id="1_n0rbw"]
+[ext_resource type="Material" uid="uid://cnsa0x4u02q3r" path="res://engine/gop/assets/placeholder/RED.tres" id="2_ieq73"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n0rbw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_6smmj"]
+material = ExtResource("2_ieq73")
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_n0rbw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_n0rbw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_6smmj")
